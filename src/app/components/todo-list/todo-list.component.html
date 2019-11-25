@@ -1,0 +1,23 @@
+<div class="panel panel-default container-fluid">  
+  <div class="panel-body col-md-8">
+      <table class="table">
+        <tr>
+          <td>
+              <input type="text" [(ngModel)]='todo' class="form-control" placeholder="Enter Todo ---">
+          </td>
+          <td>
+              <button type="icon" class="btn btn-primary" (click)="addTodo();">Add</button>
+          </td>
+        </tr>
+        <hr>
+        <tr *ngFor="let todo of todos">
+          <td>
+            {{todo}}
+          </td>
+          <td>
+              <button type="icon" class="btn btn-primary" (click)="removeTodo(todo);">Remove</button>
+          </td>
+        </tr>
+      </table>
+  </div>
+</div>

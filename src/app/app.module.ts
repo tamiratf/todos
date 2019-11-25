@@ -12,13 +12,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LogInComponent } from './components/log-in/log-in.component';
 import { RegisterComponent } from './components/register/register.component';
-
+import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     LogInComponent,
-    RegisterComponent
+    RegisterComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { RegisterComponent } from './components/register/register.component';
     AngularMaterialModule,
     FlexLayoutModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent],
